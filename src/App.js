@@ -10,7 +10,7 @@ import { Container, Wraper } from "./App.styled.jsx";
 
 const App = () => {
   const [contacts, setContacts] = useState(() => {
-    return JSON.parse(window.localStorage.getItem("contacts")) ?? "";
+    return JSON.parse(window.localStorage.getItem("contacts")) ?? [];
   });
   const [filter, setFilter] = useState("");
   const style = {
